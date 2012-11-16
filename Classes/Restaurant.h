@@ -29,6 +29,9 @@
 	NSMutableArray *specialisationArray;
 	
 }
+
+//This added by Girish
+
 @property(nonatomic,retain)NSMutableArray *specialisationArray;
 @property(nonatomic,retain)NSString *facilities;
 @property(nonatomic,retain)NSString *latitude;
