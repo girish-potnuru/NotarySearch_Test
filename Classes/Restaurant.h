@@ -30,7 +30,7 @@
 	
 }
 
-//This added by Girish
+//This added by Girish -------Potnuru
 
 @property(nonatomic,retain)NSMutableArray *specialisationArray;
 @property(nonatomic,retain)NSString *facilities;
