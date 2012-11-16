@@ -1,0 +1,25 @@
+//
+//  AddsObject.m
+//  ApunKaBazar
+//
+//  Created by stellentmac1 on 7/8/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "AddsObject.h"
+
+
+@implementation AddsObject
+@synthesize imageUrl;
+@synthesize addImage;
+
+
+-(void)dealloc
+{
+	[addImage release];
+	[imageUrl release];
+	[super dealloc];
+	
+}
+
+@end

@@ -1,0 +1,435 @@
+//
+//  CategoryMenuViewController.m
+//  ApunKaBazar
+//
+//  Created by stellentmac2 on 6/28/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "CategoryMenuViewController.h"
+#import "ASIFormDataRequest.h"
+#import "JSON.h"
+#import "CategoryMenu.h"
+
+#import "CategoryMenuListViewController.h"
+#import "ApunKaBazarAppDelegate.h"
+#import"AddsObject.h"
+#import"SearchViewController.h"
+//#import <QuartzCore/QuartzCore.h>
+
+@implementation CategoryMenuViewController
+
+@synthesize categoryId;
+@synthesize categoryName;
+@synthesize menuArray;
+@synthesize tblView;
+@synthesize categoryMenuListViewController;
+@synthesize titlehedline;
+@synthesize activityIndicator;
+@synthesize AddImageView;
+@synthesize addsTimer;
+@synthesize count;
+@synthesize SearchedArray;
+@synthesize searchBar;
+
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad 
+{
+    [super viewDidLoad];
+	
+	SearchedArray=[[NSMutableArray alloc]init];
+	appDelegate=(ApunKaBazarAppDelegate*)[[UIApplication sharedApplication] delegate];
+	count=0;
+	self.tblView.backgroundColor=[UIColor clearColor];
+	[self.tblView setAllowsSelection:NO];
+	//@"Menu"self.title=@"Menu";
+	//self.titlehedline.text=@"Menu";
+	self.titlehedline.text=appDelegate.selectedCategory.categoryName;
+	self.titlehedline.textColor=[UIColor blueColor];
+	self.titlehedline.font=[UIFont boldSystemFontOfSize:17];
+	titlehedline.textAlignment = UITextAlignmentCenter;
+	
+	//self.navigationController.navigationBarHidden=YES;
+	//[self.activityIndicator startAnimating];
+	//[self performSelector:@selector(getData) withObject:nil afterDelay:0.1];
+	[self addImagesMethod];
+	
+	
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+	//[self.activityIndicator startAnimating];
+	//[self performSelector:@selector(getData) withObject:nil afterDelay:0.1];
+
+	
+}
+
+-(void)addImagesMethod
+{
+	
+	if(count<[appDelegate.addImagesArray count])
+	{
+		
+		AddsObject *object=(AddsObject *)[appDelegate.addImagesArray objectAtIndex:count];		
+		/*
+		NSString *url=object.imageUrl;
+		NSURL *urls=[NSURL URLWithString:url];
+		NSData *data=[NSData dataWithContentsOfURL:urls];
+		UIImage *image=[UIImage imageWithData:data];
+		self.AddImageView.image=image;
+		 */
+		self.AddImageView.image=object.addImage;
+		 count++;
+		
+		
+		
+	}	
+    
+	else	
+	{
+		count=0;
+		
+	}
+	
+	NSLog(@"count is %d",count);
+	
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+	
+	[self.addsTimer invalidate];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+
+	NSLog(@"CategoryMenuViewController,arraycount is %d",[self.menuArray count]);
+	[self.activityIndicator startAnimating];
+	[self performSelector:@selector(getData) withObject:nil afterDelay:0.1];
+	self.addsTimer=[NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(addImagesMethod) userInfo:nil repeats:YES];
+	
+}
+- (IBAction) backClicked: (id) sender
+{
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
+-(IBAction)HomeButtonPressed:(id)sender
+{
+	[self.navigationController popToRootViewControllerAnimated:YES];
+	
+}
+
+
+
+
+
+
+
+/*
+-(void) getData
+{
+	//http://www.myappdemo.com/ApunKaBazaar/services/getMenu.php?catid=1
+	NSString *urlString1=[NSString stringWithFormat:@"%@getMenu.php",URLprefix];
+	NSLog(@"%@",urlString1);
+	NSURL *url1=[[NSURL alloc] initWithString:urlString1];
+	asiRequest = [ASIFormDataRequest requestWithURL:url1];
+	NSLog(@"category id is %@",appDelegate.selectedCategory.categotyId);
+	[asiRequest setPostValue:appDelegate.selectedCategory.categotyId forKey:@"catid"];
+	[asiRequest setDelegate:self];
+	[asiRequest startAsynchronous];
+	
+	[url1 release];
+	
+}
+
+- (void) requestFinished:(ASIHTTPRequest *)request
+{
+	
+	asiRequest.delegate = nil;
+	asiRequest = nil;
+	
+	NSString *response = [request responseString];
+	NSLog(@"response:%@",response);
+	NSData *responseData=[request responseData];
+	NSString *responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+	
+	NSDictionary *results = [responseString JSONValue];
+	
+	NSArray *array=[results objectForKey:@"menus"];
+	
+	NSMutableArray *arr=[[NSMutableArray alloc] init];
+	
+	for (NSDictionary *dict in array) 
+	{
+		CategoryMenu *menu=[[CategoryMenu alloc] init];
+		menu.categoryMenuid=[dict objectForKey:@"menuid"];
+		menu.categoryMenuname=[dict objectForKey:@"menuname"];
+		[arr addObject:menu];
+		[menu release];
+	}
+	
+	[self.menuArray removeAllObjects];
+	self.menuArray=arr;
+	
+	NSLog(@"array count is %d,%d,%d",[self.menuArray count],[arr count],[array count]);
+	[arr release];
+	[self.tblView reloadData];
+	[self.activityIndicator stopAnimating];
+
+}
+
+- (void) requestFailed:(ASIHTTPRequest *)request
+{
+	asiRequest.delegate = nil;
+	asiRequest = nil;
+	
+	[self.activityIndicator stopAnimating];
+}
+
+*/
+
+-(void) getData
+{
+	NSString *urlString1=[NSString stringWithFormat:@"%@getMenu.php",URLprefix];
+	NSLog(@"%@",urlString1);
+	NSURL *url1=[[NSURL alloc] initWithString:urlString1];
+	ASIFormDataRequest *asiRequest1 = [ASIFormDataRequest requestWithURL:url1];
+	NSLog(@"category id is %@",appDelegate.selectedCategory.categotyId);
+	[asiRequest1 setPostValue:appDelegate.selectedCategory.categotyId forKey:@"catid"];
+	[asiRequest1 setDelegate:self];
+	//[asiRequest startAsynchronous];
+	[asiRequest1 startSynchronous];
+	
+	NSError *error = [asiRequest1 error];
+	if(!error)
+	{
+		
+		NSString *response = [asiRequest1 responseString];
+		NSLog(@"Response:%@",response);
+		
+		NSData *responseData=[asiRequest1 responseData];
+		
+		NSString *responseString = [[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] autorelease];
+		
+		NSDictionary *results = [responseString JSONValue];
+		
+		NSArray *array=[results objectForKey:@"menus"];
+		NSMutableArray *arr=[[NSMutableArray alloc] init];
+		
+		for (NSDictionary *dict in array) 
+		{
+			CategoryMenu *menu=[[CategoryMenu alloc] init];
+			menu.categoryMenuid=[dict objectForKey:@"menuid"];
+			menu.categoryMenuname=[dict objectForKey:@"menuname"];
+			[arr addObject:menu];
+			[menu release];
+		}
+		
+		self.menuArray=arr;
+		[arr release];
+		
+		[self.tblView reloadData];
+		[self.activityIndicator stopAnimating];
+	}
+	else {
+		
+		[self.activityIndicator stopAnimating];
+		NSLog(@"------%@,%d",[error localizedDescription],[error code]);
+		
+		
+		if([error code]==1)
+		{
+			[self.activityIndicator startAnimating];
+			[self performSelector:@selector(getData) withObject:nil afterDelay:0.1];
+			
+		}
+		
+	}
+
+	
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView 
+{
+    return [self.menuArray count]+1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex 
+{
+	return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+	
+	return 60;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	static NSString *CellIdentifier = @"Cell";
+		 
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	if (cell == nil)
+	 {
+		 cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+		 reuseIdentifier:CellIdentifier] autorelease];
+		 
+		 UIButton *btn=[[UIButton alloc] initWithFrame:CGRectMake(5, 5, 310, 50)];
+		 //btn.tag=indexPath.section;
+		 [btn setImage:[UIImage imageNamed:@"items-bg.png"] forState:UIControlStateNormal];
+		 //[btn addTarget:self action:@selector(menuClicked:) forControlEvents:UIControlEventTouchUpInside];
+		 
+		 UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 17, 290, 21)];
+		// titleLabel.text = ((CategoryMenu *)[self.menuArray objectAtIndex:indexPath.section]).categoryMenuname;
+		 titleLabel.textColor = [UIColor blueColor];
+		 titleLabel.backgroundColor = [UIColor clearColor];
+		 //titleLabel.textAlignment = UITextAlignmentCenter;
+		 
+		 [cell.contentView addSubview:btn];
+		 [cell.contentView addSubview:titleLabel];
+		 [btn release];
+		 [titleLabel release];
+		 NSLog(@"index path.row is %d",indexPath.row);
+	 }
+	
+	NSArray *arr=cell.contentView.subviews;
+	for (UIView *subView in arr) {
+		if ([subView isKindOfClass:[UILabel class]]) {
+			UILabel *lbl=(UILabel *)subView;
+			if(indexPath.section==0)
+			{
+				
+				NSMutableString *appendString=[[NSMutableString alloc]initWithString:@"Search By "];
+				[appendString appendString:appDelegate.selectedCategory.categoryName];
+				lbl.text=appendString;
+				[appendString release];
+			}
+			if (indexPath.section>=1) 
+			{
+				lbl.text=((CategoryMenu *)[self.menuArray objectAtIndex:indexPath.section-1]).categoryMenuname;
+			}
+			
+		}
+		if ([subView isKindOfClass:[UIButton class]]) {
+			UIButton *btn=(UIButton *)subView;
+			btn.tag=indexPath.section;
+			[btn addTarget:self action:@selector(menuClicked:) forControlEvents:UIControlEventTouchUpInside];
+		}
+	}
+	
+	//cell.textLabel.text=((CategoryMenu *)[self.menuArray objectAtIndex:indexPath.section]).categoryMenuname;
+	//cell.textLabel.textColor=[UIColor blueColor];
+	//cell.textLabel.textAlignment=UITextAlignmentCenter;
+	//cell.textLabel.backgroundColor = [UIColor grayColor];
+
+	
+	//static NSString *MyIdentifier= @"MyIdentifier";
+//	MyIdentifier = @"ContactsTableViewCell";
+//	ContactsTableViewCell *cell = (ContactsTableViewCell *) [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+//	if (cell==nil) 
+//	{
+//		[[NSBundle mainBundle] loadNibNamed:@"ContactsTableViewCell" owner:self options:nil];
+//		cell=tblCell;
+//		
+//	}	
+//	cell.btnCheckbox.tag=indexPath.row;
+//	NSLog(@"cell indexpath:%d",indexPath.row);
+//	
+//	NSMutableArray *anArray=[self.contactsArray objectAtIndex:indexPath.row];
+//	
+//	cell.lblName.text=[anArray objectAtIndex:0];
+//	cell.lblDetail.text=[anArray objectAtIndex:1];
+//	NSString *index=[self.selectionArray objectAtIndex:indexPath.row];
+//	if ([index isEqualToString:@"NO"]) {
+//		[cell.btnCheckbox setImage:[UIImage imageNamed:@"ethnbox_off.png"] forState:UIControlStateNormal];
+//		
+//	}
+//	else {
+//		[cell.btnCheckbox setImage:[UIImage imageNamed:@"ethnbox_on.png"] forState:UIControlStateNormal];
+//		
+//	}
+
+	return cell;
+	
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+	CategoryMenuListViewController *cViewController=[[CategoryMenuListViewController alloc]	initWithNibName:@"CategoryMenuListViewController" bundle:nil];
+	self.categoryMenuListViewController=cViewController;
+	[self.navigationController pushViewController:self.categoryMenuListViewController animated:YES];
+	[cViewController release];
+
+}
+
+- (void) menuClicked:(id) sender{
+
+	if ([sender tag]==0)
+	{
+		SearchViewController *sviewcontroller=[[SearchViewController alloc]initWithNibName:@"SearchViewController" bundle:nil];
+		[self.navigationController pushViewController:sviewcontroller animated:YES];
+	}
+	if([sender tag]>=1)
+	{
+	CategoryMenuListViewController *cViewController=[[CategoryMenuListViewController alloc]	initWithNibName:@"CategoryMenuListViewController" bundle:nil];
+	cViewController.selectedCategoryMenu=[self.menuArray objectAtIndex:[sender tag]-1];
+	self.categoryMenuListViewController=cViewController;
+	[self.navigationController pushViewController:self.categoryMenuListViewController animated:YES];
+	[cViewController release];
+	}
+	
+}
+
+/*
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations.
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+*/
+
+- (void)didReceiveMemoryWarning {
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc. that aren't in use.
+}
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+
+- (void)dealloc 
+{
+	if (asiRequest) 
+	{
+		asiRequest.delegate = nil;
+		[asiRequest cancel];
+		asiRequest = nil;
+	} 
+	[searchBar release];
+	[AddImageView release];
+	[categoryMenuListViewController release];
+	[menuArray release];
+	[categoryId release];
+	[categoryName release];
+	
+	[tblView release];
+	tblView = nil;
+	[activityIndicator release];
+    activityIndicator = nil;
+	[titlehedline release];
+	titlehedline = nil;
+	
+	[super dealloc];
+}
+
+
+@end

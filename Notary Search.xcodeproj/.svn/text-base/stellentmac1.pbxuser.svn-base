@@ -1,0 +1,951 @@
+// !$*UTF8*$!
+{
+	0F8B3B1D13CF1B7E00F9D45C /* ApunKaBazarAppDelegate.m:46 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* ApunKaBazarAppDelegate.m */;
+		functionName = "-application:didFinishLaunchingWithOptions:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 46;
+		modificationTime = 332489512.144959;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	0F8B3B1F13CF1B8200F9D45C /* ApunKaBazarAppDelegate.m:113 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* ApunKaBazarAppDelegate.m */;
+		functionName = "-finishAnimation";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 113;
+		modificationTime = 332489512.144802;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	0F8B3B2213CF1B9200F9D45C /* LoginViewController.m:42 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 8C9E792A13BCAF97003897CB /* LoginViewController.m */;
+		functionName = "-viewDidLoad";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 42;
+		modificationTime = 332489512.144779;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	0F8C936D13DE8B2100DC3E07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C8FFAA413BDEFF700D4EF8F /* RestaurantDetailViewController.m */;
+		name = "RestaurantDetailViewController.m: 171";
+		rLen = 0;
+		rLoc = 5116;
+		rType = 0;
+		vrLen = 725;
+		vrLoc = 4769;
+	};
+	0F8C936E13DE8B2100DC3E07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C9E788D13BCA887003897CB /* MenuItemsCell.m */;
+		name = "MenuItemsCell.m: 6";
+		rLen = 0;
+		rLoc = 96;
+		rType = 0;
+		vrLen = 510;
+		vrLoc = 0;
+	};
+	0F8C936F13DE8B2100DC3E07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C9E788D13BCA887003897CB /* MenuItemsCell.m */;
+		name = "MenuItemsCell.m: 6";
+		rLen = 0;
+		rLoc = 96;
+		rType = 0;
+		vrLen = 510;
+		vrLoc = 0;
+	};
+	0F8C937C13DE8B6800DC3E07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C9E788D13BCA887003897CB /* MenuItemsCell.m */;
+		name = "MenuItemsCell.m: 6";
+		rLen = 0;
+		rLoc = 96;
+		rType = 0;
+		vrLen = 509;
+		vrLoc = 0;
+	};
+	0F8C937D13DE8B6800DC3E07 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C9E788D13BCA887003897CB /* MenuItemsCell.m */;
+		name = "MenuItemsCell.m: 6";
+		rLen = 0;
+		rLoc = 96;
+		rType = 0;
+		vrLen = 509;
+		vrLoc = 0;
+	};
+	0F8D214913C2DCF500A64937 /* TermsAndReviewsViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1182, 624}}";
+			sepNavSelRange = "{558, 67}";
+			sepNavVisRange = "{0, 1430}";
+			sepNavWindowFrame = "{{39, 70}, {1241, 705}}";
+		};
+	};
+	0F8D214A13C2DCF500A64937 /* TermsAndReviewsViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1622, 2795}}";
+			sepNavSelRange = "{1442, 0}";
+			sepNavVisRange = "{729, 1420}";
+			sepNavWindowFrame = "{{38, 75}, {1241, 703}}";
+		};
+	};
+	0F8D25F913C3588300A64937 /* MyCLController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {860, 494}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 547}";
+		};
+	};
+	0F8D25FA13C3588800A64937 /* MyCLController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {860, 715}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{3, 501}";
+		};
+	};
+	0F906CD813D155860042176A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* ApunKaBazar_Prefix.pch */;
+		name = "ApunKaBazar_Prefix.pch: 6";
+		rLen = 0;
+		rLoc = 173;
+		rType = 0;
+		vrLen = 344;
+		vrLoc = 0;
+	};
+	0F906CDC13D155860042176A /* Setting A User?s Status In Facebook From An iPhone App ? A Tutorial _ Mobile Orchard.webarchive.xhtml */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = text.xml;
+		name = "Setting A User?s Status In Facebook From An iPhone App ? A Tutorial _ Mobile Orchard.webarchive.xhtml";
+		path = "/Users/stellentmac1/Downloads/Setting A User?s Status In Facebook From An iPhone App ? A Tutorial _ Mobile Orchard.webarchive.xhtml";
+		sourceTree = "<absolute>";
+	};
+	0F906DD913D1632E0042176A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F906CDC13D155860042176A /* Setting A User?s Status In Facebook From An iPhone App ? A Tutorial _ Mobile Orchard.webarchive.xhtml */;
+		name = "Setting A User?s Status In Facebook From An iPhone App ? A Tutorial _ Mobile Orchard.webarchive.xhtml: 3";
+		rLen = 0;
+		rLoc = 92;
+		rType = 0;
+		vrLen = 3581;
+		vrLoc = 0;
+	};
+	0F906DDA13D1632E0042176A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FB3392D13C828EF00C6DC89 /* SearchViewController.m */;
+		name = "SearchViewController.m: 555";
+		rLen = 0;
+		rLoc = 15934;
+		rType = 0;
+		vrLen = 976;
+		vrLoc = 15865;
+	};
+	0F906DDB13D1632E0042176A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FB3392C13C828EF00C6DC89 /* SearchViewController.h */;
+		name = "SearchViewController.h: 32";
+		rLen = 9;
+		rLoc = 735;
+		rType = 0;
+		vrLen = 1110;
+		vrLoc = 267;
+	};
+	0F93486913D3F5F8003E075C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C8FFB5B13BDFFC400D4EF8F /* MenuItemsViewController.m */;
+		name = "MenuItemsViewController.m: 191";
+		rLen = 0;
+		rLoc = 5190;
+		rType = 0;
+		vrLen = 775;
+		vrLoc = 4688;
+	};
+	0F934B3013D44265003E075C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C8FFAD413BDF47600D4EF8F /* ReviewsPageViewController.m */;
+		name = "ReviewsPageViewController.m: 288";
+		rLen = 0;
+		rLoc = 7846;
+		rType = 0;
+		vrLen = 922;
+		vrLoc = 7406;
+	};
+	0F934BA113D451B4003E075C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8CD5900513B9E19E00A4D485 /* CategoryMenuListViewController.m */;
+		name = "CategoryMenuListViewController.m: 194";
+		rLen = 0;
+		rLoc = 5254;
+		rType = 0;
+		vrLen = 529;
+		vrLoc = 4958;
+	};
+	0F9A3D0013BEE08600CF7F66 /* ApunKaBazar */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+			{
+				active = YES;
+				name = NSZombieEnabled;
+				value = YES;
+			},
+			{
+				active = YES;
+				name = NSAutoreleaseFreedObjectCheckEnabled;
+				value = YES;
+			},
+			{
+				active = YES;
+				name = "NSDebugEnabled ";
+				value = YES;
+			},
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = ApunKaBazar;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	0F9A3D0713BEE08900CF7F66 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = ApunkaBazar;
+			};
+		};
+	};
+	0F9A3D0813BEE08900CF7F66 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	0F9A3DB013BEF56000CF7F66 /* HomeViewController.m:53 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 8CD58E6513B9AD4100A4D485 /* HomeViewController.m */;
+		functionName = "-viewDidLoad";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 53;
+		modificationTime = 332489512.144818;
+		originalNumberOfMultipleMatches = 1;
+		state = 0;
+	};
+	0FAB2AE213C6DAD7007BD552 /* AddsObject.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1220, 606}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 358}";
+			sepNavWindowFrame = "{{1, 72}, {1279, 701}}";
+		};
+	};
+	0FAB2AE313C6DAD7007BD552 /* AddsObject.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {860, 338}}";
+			sepNavSelRange = "{236, 0}";
+			sepNavVisRange = "{0, 318}";
+			sepNavWindowFrame = "{{1, 72}, {1279, 701}}";
+		};
+	};
+	0FAB2D3713C71961007BD552 /* CategoryMenuListViewController.m:522 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 8CD5900513B9E19E00A4D485 /* CategoryMenuListViewController.m */;
+		functionName = "-doSearch";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 522;
+		modificationTime = 332489512.144839;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	0FB3392C13C828EF00C6DC89 /* SearchViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {824, 585}}";
+			sepNavSelRange = "{735, 9}";
+			sepNavVisRange = "{267, 1110}";
+			sepNavWindowFrame = "{{1, 64}, {1279, 701}}";
+		};
+	};
+	0FB3392D13C828EF00C6DC89 /* SearchViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1220, 8112}}";
+			sepNavSelRange = "{9789, 0}";
+			sepNavVisRange = "{9343, 1243}";
+			sepNavWindowFrame = "{{1, 70}, {1279, 701}}";
+		};
+	};
+	0FB33B1913C87E7000C6DC89 /* SpecilasObject.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1220, 629}}";
+			sepNavSelRange = "{292, 15}";
+			sepNavVisRange = "{0, 313}";
+			sepNavWindowFrame = "{{1, 72}, {1279, 701}}";
+		};
+	};
+	0FB33B1A13C87E7000C6DC89 /* SpecilasObject.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1220, 629}}";
+			sepNavSelRange = "{280, 0}";
+			sepNavVisRange = "{0, 308}";
+			sepNavWindowFrame = "{{1, 72}, {1279, 701}}";
+		};
+	};
+	0FB8C16C13DFD00300A2CFAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C9E788D13BCA887003897CB /* MenuItemsCell.m */;
+		name = "MenuItemsCell.m: 6";
+		rLen = 0;
+		rLoc = 96;
+		rType = 0;
+		vrLen = 508;
+		vrLoc = 0;
+	};
+	0FB8C19C13DFE21700A2CFAE /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8CD5900513B9E19E00A4D485 /* CategoryMenuListViewController.m */;
+	};
+	0FB8C19E13DFE23A00A2CFAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8C9E788D13BCA887003897CB /* MenuItemsCell.m */;
+		name = "MenuItemsCell.m: 6";
+		rLen = 0;
+		rLoc = 96;
+		rType = 0;
+		vrLen = 489;
+		vrLoc = 0;
+	};
+	0FB8C19F13DFE23A00A2CFAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8CD5900513B9E19E00A4D485 /* CategoryMenuListViewController.m */;
+		name = "CategoryMenuListViewController.m: 194";
+		rLen = 0;
+		rLoc = 5254;
+		rType = 0;
+		vrLen = 342;
+		vrLoc = 4958;
+	};
+	0FB8C1A213DFE23A00A2CFAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8CD5900513B9E19E00A4D485 /* CategoryMenuListViewController.m */;
+		name = "CategoryMenuListViewController.m: 136";
+		rLen = 0;
+		rLoc = 3836;
+		rType = 0;
+		vrLen = 1470;
+		vrLoc = 6194;
+	};
+	0FB8C1A613DFE27500A2CFAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8CD5900513B9E19E00A4D485 /* CategoryMenuListViewController.m */;
+		name = "CategoryMenuListViewController.m: 194";
+		rLen = 0;
+		rLoc = 5254;
+		rType = 0;
+		vrLen = 342;
+		vrLoc = 4958;
+	};
+	0FB8C1A713DFE27500A2CFAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8CD5900513B9E19E00A4D485 /* CategoryMenuListViewController.m */;
+		name = "CategoryMenuListViewController.m: 136";
+		rLen = 0;
+		rLoc = 3836;
+		rType = 0;
+		vrLen = 1470;
+		vrLoc = 6194;
+	};
+	0FB8C1A813DFE27500A2CFAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8CD5900513B9E19E00A4D485 /* CategoryMenuListViewController.m */;
+		name = "CategoryMenuListViewController.m: 426";
+		rLen = 0;
+		rLoc = 12611;
+		rType = 0;
+		vrLen = 1344;
+		vrLoc = 11950;
+	};
+	0FEA1D1713C5AC8500DA21D1 /* DisplayMap.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {860, 297}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 367}";
+		};
+	};
+	0FEA1D1813C5AC8B00DA21D1 /* DisplayMap.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {860, 320}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 157}";
+		};
+	};
+	189198C513BC578F006214B8 /* thme-bg.png */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{1, 72}, {1279, 701}}";
+		};
+	};
+	1D3623240D0F684500981E51 /* ApunKaBazarAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1220, 1105}}";
+			sepNavSelRange = "{1237, 10}";
+			sepNavVisRange = "{494, 1602}";
+			sepNavWindowFrame = "{{0, 75}, {1279, 701}}";
+		};
+	};
+	1D3623250D0F684500981E51 /* ApunKaBazarAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {950, 4251}}";
+			sepNavSelRange = "{7587, 41}";
+			sepNavVisRange = "{7435, 286}";
+			sepNavWindowFrame = "{{513, 66}, {1280, 701}}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* ApunKaBazar */ = {
+		activeExec = 0;
+		executables = (
+			0F9A3D0013BEE08600CF7F66 /* ApunKaBazar */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Distribution;
+		activeExecutable = 0F9A3D0013BEE08600CF7F66 /* ApunKaBazar */;
+		activeSDKPreference = iphonesimulator4.3;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* ApunKaBazar */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* ApunKaBazar */,
+		);
+		breakpoints = (
+			0F9A3DB013BEF56000CF7F66 /* HomeViewController.m:53 */,
+			0FAB2D3713C71961007BD552 /* CategoryMenuListViewController.m:522 */,
+			0F8B3B1D13CF1B7E00F9D45C /* ApunKaBazarAppDelegate.m:46 */,
+			0F8B3B1F13CF1B8200F9D45C /* ApunKaBazarAppDelegate.m:113 */,
+			0F8B3B2213CF1B9200F9D45C /* LoginViewController.m:42 */,
+		);
+		codeSenseManager = 0F9A3D0813BEE08900CF7F66 /* Code sense */;
+		executables = (
+			0F9A3D0013BEE08600CF7F66 /* ApunKaBazar */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					502,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					682,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					606,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 333434857;
+			PBXWorkspaceStateSaveDate = 333434857;
+		};
+		perUserProjectItems = {
+			0F8C936D13DE8B2100DC3E07 = 0F8C936D13DE8B2100DC3E07 /* PBXTextBookmark */;
+			0F8C936E13DE8B2100DC3E07 = 0F8C936E13DE8B2100DC3E07 /* PBXTextBookmark */;
+			0F8C936F13DE8B2100DC3E07 = 0F8C936F13DE8B2100DC3E07 /* PBXTextBookmark */;
+			0F8C937C13DE8B6800DC3E07 = 0F8C937C13DE8B6800DC3E07 /* PBXTextBookmark */;
+			0F8C937D13DE8B6800DC3E07 = 0F8C937D13DE8B6800DC3E07 /* PBXTextBookmark */;
+			0F906CD813D155860042176A = 0F906CD813D155860042176A /* PBXTextBookmark */;
+			0F906DD913D1632E0042176A = 0F906DD913D1632E0042176A /* PBXTextBookmark */;
+			0F906DDA13D1632E0042176A = 0F906DDA13D1632E0042176A /* PBXTextBookmark */;
+			0F906DDB13D1632E0042176A = 0F906DDB13D1632E0042176A /* PBXTextBookmark */;
+			0F93486913D3F5F8003E075C = 0F93486913D3F5F8003E075C /* PBXTextBookmark */;
+			0F934B3013D44265003E075C = 0F934B3013D44265003E075C /* PBXTextBookmark */;
+			0F934BA113D451B4003E075C = 0F934BA113D451B4003E075C /* PBXTextBookmark */;
+			0FB8C16C13DFD00300A2CFAE /* PBXTextBookmark */ = 0FB8C16C13DFD00300A2CFAE /* PBXTextBookmark */;
+			0FB8C19C13DFE21700A2CFAE /* PBXBookmark */ = 0FB8C19C13DFE21700A2CFAE /* PBXBookmark */;
+			0FB8C19E13DFE23A00A2CFAE /* PBXTextBookmark */ = 0FB8C19E13DFE23A00A2CFAE /* PBXTextBookmark */;
+			0FB8C19F13DFE23A00A2CFAE /* PBXTextBookmark */ = 0FB8C19F13DFE23A00A2CFAE /* PBXTextBookmark */;
+			0FB8C1A213DFE23A00A2CFAE /* PBXTextBookmark */ = 0FB8C1A213DFE23A00A2CFAE /* PBXTextBookmark */;
+			0FB8C1A613DFE27500A2CFAE /* PBXTextBookmark */ = 0FB8C1A613DFE27500A2CFAE /* PBXTextBookmark */;
+			0FB8C1A713DFE27500A2CFAE /* PBXTextBookmark */ = 0FB8C1A713DFE27500A2CFAE /* PBXTextBookmark */;
+			0FB8C1A813DFE27500A2CFAE /* PBXTextBookmark */ = 0FB8C1A813DFE27500A2CFAE /* PBXTextBookmark */;
+		};
+		sourceControlManager = 0F9A3D0713BEE08900CF7F66 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {713, 387}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 365}";
+		};
+	};
+	32CA4F630368D1EE00C91783 /* ApunKaBazar_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1206, 591}}";
+			sepNavSelRange = "{343, 0}";
+			sepNavVisRange = "{0, 344}";
+			sepNavWindowFrame = "{{15, 92}, {1265, 686}}";
+		};
+	};
+	8C8C99AC13BE915500E8D512 /* MyAnnotation.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {860, 728}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 444}";
+		};
+	};
+	8C8FFA1813BDE13700D4EF8F /* Category.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 606}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 627}";
+			sepNavWindowFrame = "{{0, 72}, {1280, 701}}";
+		};
+	};
+	8C8FFA1A13BDE13700D4EF8F /* Facility.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 606}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 380}";
+			sepNavWindowFrame = "{{3, -85}, {1280, 701}}";
+		};
+	};
+	8C8FFA1B13BDE13700D4EF8F /* Facility.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {824, 351}}";
+			sepNavSelRange = "{288, 14}";
+			sepNavVisRange = "{37, 297}";
+			sepNavWindowFrame = "{{0, 72}, {1280, 701}}";
+		};
+	};
+	8C8FFAA313BDEFF700D4EF8F /* RestaurantDetailViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1321, 1209}}";
+			sepNavSelRange = "{1365, 0}";
+			sepNavVisRange = "{755, 1729}";
+			sepNavWindowFrame = "{{366, -2}, {1280, 701}}";
+		};
+	};
+	8C8FFAA413BDEFF700D4EF8F /* RestaurantDetailViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1230, 7722}}";
+			sepNavSelRange = "{5116, 0}";
+			sepNavVisRange = "{4769, 725}";
+			sepNavWindowFrame = "{{0, 77}, {1280, 701}}";
+		};
+	};
+	8C8FFAA813BDF01600D4EF8F /* Restaurant.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 650}}";
+			sepNavSelRange = "{557, 20}";
+			sepNavVisRange = "{0, 1395}";
+			sepNavWindowFrame = "{{0, 72}, {1280, 701}}";
+		};
+	};
+	8C8FFAA913BDF01600D4EF8F /* Restaurant.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 689}}";
+			sepNavSelRange = "{618, 0}";
+			sepNavVisRange = "{0, 958}";
+			sepNavWindowFrame = "{{0, 72}, {1280, 701}}";
+		};
+	};
+	8C8FFAB013BDF03F00D4EF8F /* WriteReviewViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1286, 11752}}";
+			sepNavSelRange = "{8978, 3838}";
+			sepNavVisRange = "{11654, 1286}";
+			sepNavWindowFrame = "{{0, 77}, {1280, 701}}";
+		};
+	};
+	8C8FFAD313BDF47600D4EF8F /* ReviewsPageViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 689}}";
+			sepNavSelRange = "{857, 12}";
+			sepNavVisRange = "{0, 1524}";
+			sepNavWindowFrame = "{{0, 72}, {1280, 701}}";
+		};
+	};
+	8C8FFAD413BDF47600D4EF8F /* ReviewsPageViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 8164}}";
+			sepNavSelRange = "{7949, 0}";
+			sepNavVisRange = "{7406, 1199}";
+			sepNavWindowFrame = "{{191, 73}, {1280, 701}}";
+		};
+	};
+	8C8FFB1913BDF97600D4EF8F /* save.png */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 68}, {1241, 705}}";
+		};
+	};
+	8C8FFB4613BDFEF700D4EF8F /* RestaurantMenuViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1182, 610}}";
+			sepNavSelRange = "{151, 0}";
+			sepNavVisRange = "{0, 1289}";
+			sepNavWindowFrame = "{{39, 73}, {1241, 705}}";
+		};
+	};
+	8C8FFB4713BDFEF700D4EF8F /* RestaurantMenuViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 3731}}";
+			sepNavSelRange = "{5040, 0}";
+			sepNavVisRange = "{5538, 1058}";
+			sepNavWindowFrame = "{{0, 81}, {1280, 697}}";
+		};
+	};
+	8C8FFB5A13BDFFC400D4EF8F /* MenuItemsViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1182, 689}}";
+			sepNavSelRange = "{545, 13}";
+			sepNavVisRange = "{0, 1305}";
+			sepNavWindowFrame = "{{24, 73}, {1241, 705}}";
+		};
+	};
+	8C8FFB5B13BDFFC400D4EF8F /* MenuItemsViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {936, 4030}}";
+			sepNavSelRange = "{5190, 0}";
+			sepNavVisRange = "{4688, 775}";
+			sepNavWindowFrame = "{{0, 81}, {1280, 697}}";
+		};
+	};
+	8C92018A13BFEEBC005398C7 /* WebsiteViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1182, 610}}";
+			sepNavSelRange = "{681, 0}";
+			sepNavVisRange = "{0, 687}";
+			sepNavWindowFrame = "{{15, 68}, {1241, 705}}";
+		};
+	};
+	8C92018B13BFEEBC005398C7 /* WebsiteViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1335, 1573}}";
+			sepNavSelRange = "{2174, 0}";
+			sepNavVisRange = "{2058, 216}";
+			sepNavWindowFrame = "{{283, 37}, {1241, 705}}";
+		};
+	};
+	8C9E788913BCA87A003897CB /* RestaurantMenu.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {713, 377}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 637}";
+		};
+	};
+	8C9E788D13BCA887003897CB /* MenuItemsCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {860, 624}}";
+			sepNavSelRange = "{96, 0}";
+			sepNavVisRange = "{0, 489}";
+			sepNavWindowFrame = "{{0, 72}, {1280, 701}}";
+		};
+	};
+	8C9E78B813BCAAE8003897CB /* WriteReviewObject.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {860, 481}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 402}";
+		};
+	};
+	8C9E78B913BCAAE8003897CB /* WriteReviewObject.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {713, 366}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 520}";
+			sepNavWindowFrame = "{{0, 72}, {1280, 701}}";
+		};
+	};
+	8C9E78C013BCAB86003897CB /* WriteReviewCommentCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {713, 366}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 418}";
+		};
+	};
+	8C9E78C313BCAB86003897CB /* WriteReviewViewCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {713, 366}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 488}";
+		};
+	};
+	8C9E78C413BCAB86003897CB /* WriteReviewViewCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {713, 533}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 701}";
+		};
+	};
+	8C9E78CE13BCABBC003897CB /* Review.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {713, 429}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 697}";
+		};
+	};
+	8C9E78CF13BCABBC003897CB /* Review.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 629}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 593}";
+			sepNavWindowFrame = "{{0, 72}, {1280, 701}}";
+		};
+	};
+	8C9E791B13BCAEA8003897CB /* Rating_yellow.png */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{1, 72}, {1279, 701}}";
+		};
+	};
+	8C9E792913BCAF97003897CB /* LoginViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1182, 633}}";
+			sepNavSelRange = "{782, 0}";
+			sepNavVisRange = "{0, 1372}";
+			sepNavWindowFrame = "{{15, 68}, {1241, 705}}";
+		};
+	};
+	8C9E792A13BCAF97003897CB /* LoginViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1182, 4173}}";
+			sepNavSelRange = "{7925, 12}";
+			sepNavVisRange = "{183, 1543}";
+			sepNavWindowFrame = "{{39, 68}, {1241, 705}}";
+		};
+	};
+	8C9E792C13BCAF97003897CB /* SignUpViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 610}}";
+			sepNavSelRange = "{737, 8}";
+			sepNavVisRange = "{0, 1254}";
+			sepNavWindowFrame = "{{0, 70}, {1280, 705}}";
+		};
+	};
+	8C9E792D13BCAF97003897CB /* SignUpViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1293, 5369}}";
+			sepNavSelRange = "{5230, 0}";
+			sepNavVisRange = "{0, 749}";
+			sepNavWindowFrame = "{{39, 64}, {1241, 705}}";
+		};
+	};
+	8C9E792F13BCAF97003897CB /* ForgotPasswordViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {860, 323}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 433}";
+			sepNavWindowFrame = "{{15, 68}, {1241, 705}}";
+		};
+	};
+	8C9E793913BCAFAB003897CB /* RegisterCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1220, 606}}";
+			sepNavSelRange = "{244, 0}";
+			sepNavVisRange = "{0, 721}";
+			sepNavWindowFrame = "{{1, 72}, {1279, 701}}";
+		};
+	};
+	8CD58E6413B9AD4100A4D485 /* HomeViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {824, 572}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 511}";
+			sepNavWindowFrame = "{{15, 68}, {1241, 705}}";
+		};
+	};
+	8CD58E6513B9AD4100A4D485 /* HomeViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 7371}}";
+			sepNavSelRange = "{10391, 0}";
+			sepNavVisRange = "{8398, 1851}";
+			sepNavWindowFrame = "{{-1, 74}, {1280, 701}}";
+		};
+	};
+	8CD58F7113B9D2F400A4D485 /* CategoryMenuViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {824, 780}}";
+			sepNavSelRange = "{614, 60}";
+			sepNavVisRange = "{341, 531}";
+			sepNavWindowFrame = "{{15, 73}, {1241, 705}}";
+		};
+	};
+	8CD58F7213B9D2F400A4D485 /* CategoryMenuViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 5434}}";
+			sepNavSelRange = "{7973, 0}";
+			sepNavVisRange = "{11138, 1086}";
+			sepNavWindowFrame = "{{0, 81}, {1280, 697}}";
+		};
+	};
+	8CD58FBC13B9D9C700A4D485 /* CategoryMenu.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {713, 387}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 397}";
+			sepNavWindowFrame = "{{0, 72}, {1280, 701}}";
+		};
+	};
+	8CD58FBD13B9D9C700A4D485 /* CategoryMenu.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 606}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 362}";
+			sepNavWindowFrame = "{{0, 72}, {1280, 701}}";
+		};
+	};
+	8CD5900413B9E19E00A4D485 /* CategoryMenuListViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1182, 910}}";
+			sepNavSelRange = "{627, 30}";
+			sepNavVisRange = "{161, 1379}";
+			sepNavWindowFrame = "{{0, 73}, {1241, 705}}";
+		};
+	};
+	8CD5900513B9E19E00A4D485 /* CategoryMenuListViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 8684}}";
+			sepNavSelRange = "{12611, 0}";
+			sepNavVisRange = "{11950, 1344}";
+			sepNavWindowFrame = "{{0, 77}, {1280, 701}}";
+		};
+	};
+	8CD5902713B9E77700A4D485 /* CategoryMenuListCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1220, 629}}";
+			sepNavSelRange = "{451, 14}";
+			sepNavVisRange = "{0, 1161}";
+			sepNavWindowFrame = "{{1, 72}, {1279, 701}}";
+		};
+	};
+	8CD5902813B9E77700A4D485 /* CategoryMenuListCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1220, 1092}}";
+			sepNavSelRange = "{1147, 0}";
+			sepNavVisRange = "{701, 824}";
+			sepNavWindowFrame = "{{1, 72}, {1279, 701}}";
+		};
+	};
+	8CD5906913B9F3E300A4D485 /* MapViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1182, 1365}}";
+			sepNavSelRange = "{260, 0}";
+			sepNavVisRange = "{200, 1078}";
+			sepNavWindowFrame = "{{39, 73}, {1241, 705}}";
+		};
+	};
+	8CD5906A13B9F3E300A4D485 /* MapViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 5902}}";
+			sepNavSelRange = "{3509, 0}";
+			sepNavVisRange = "{2908, 936}";
+			sepNavWindowFrame = "{{0, 75}, {1280, 701}}";
+		};
+	};
+	8D1107310486CEB800E47090 /* ApunKaBazar-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{0, 77}, {1280, 701}}";
+		};
+	};
+}

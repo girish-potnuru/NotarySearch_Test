@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files of the 'ApunKaBazar' target in the 'ApunKaBazar' project
+//
+
+//#define URLprefix @"http://www.myappdemo.com/ApunKaBazaar/services/"
+//#define URLprefix @"http://smartstreetsolutions.com/mobileapps/admin/services/"
+#define URLprefix @"http://www.smartstreetsolutions.com/mobileapps/admin/NotarySearch/services/"
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+#endif

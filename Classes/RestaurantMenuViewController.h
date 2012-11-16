@@ -1,0 +1,53 @@
+//
+//  RestaruantMenuViewController.h
+//  ApunKaBazar
+//
+//  Created by APPLE on 6/29/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "ASIHTTPRequest.h"
+#import"ApunKaBazarAppDelegate.h"
+
+@class ASIFormDataRequest;
+@interface RestaurantMenuViewController : UIViewController <ASIHTTPRequestDelegate>
+{
+	NSString *rsid;
+	IBOutlet UITableView *menuTable;
+	NSMutableArray *MenuArray;
+	NSString *MenuId;
+	NSString *Menuname;
+	UILabel *titleline;
+	ASIFormDataRequest *asiRequest;
+	UIActivityIndicatorView *activityIndicator;
+	NSTimer *addsTimer;
+	int count;
+	UIImageView *AddImageView;
+  ApunKaBazarAppDelegate *appDelegate;
+	
+	UILabel *deScriptionLabel;
+	UIButton *Addbutton;
+	
+	
+}
+@property(nonatomic,retain)IBOutlet UIButton *Addbutton;
+@property(nonatomic,retain)IBOutlet UILabel *deScriptionLabel;
+
+
+@property(nonatomic,retain)IBOutlet UILabel *titleline;
+@property(nonatomic,retain)NSString *MenuId;
+@property(nonatomic,retain)NSString *Menuname;
+@property(nonatomic,retain)NSMutableArray *MenuArray;
+@property(nonatomic,retain)IBOutlet UITableView *menuTable;
+@property(nonatomic,retain)NSString *rsid;	
+@property(nonatomic,retain)IBOutlet UIActivityIndicatorView *activityIndicator;
+@property(nonatomic,retain)IBOutlet UIImageView *AddImageView;
+@property(nonatomic,retain)NSTimer *addsTimer;
+@property(nonatomic,readwrite)int count;
+-(void) getData;
+-(IBAction)back;
+-(IBAction)HomeButtonPressed:(id)sender;
+-(IBAction)ADDPressed:(id)sender;
+
+@end

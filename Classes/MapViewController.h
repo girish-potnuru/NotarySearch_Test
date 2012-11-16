@@ -1,0 +1,102 @@
+//
+//  MapViewController.h
+//  ApunKaBazar
+//
+//  Created by stellentmac2 on 6/28/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "ASIHTTPRequest.h"
+#import <MapKit/MapKit.h>
+#import"ApunKaBazarAppDelegate.h"
+
+@class ASIFormDataRequest;
+@class Restaurant;
+@interface MapViewController : UIViewController <UIWebViewDelegate, ASIHTTPRequestDelegate,MKMapViewDelegate>
+{
+	UIView *headerView;
+	IBOutlet MKMapView *mapView;
+
+	NSTimer *addsTimer;
+	int count;
+	UIImageView *AddImageView;
+	UIWebView *webView;
+	ApunKaBazarAppDelegate *appDelegate;
+	UILabel *placeTitle;
+	UILabel *placeName;
+	UILabel *placeAddress;
+	UILabel *placePhoneno;
+	UILabel *placeDistance;
+	UILabel *placeWebsite;
+	UILabel *placeEmail;
+	
+	UIImageView *placeImage;
+	
+	UIImageView *otherImage1;
+	UIImageView *otherImage2;
+	UIImageView *otherImage3;
+	
+	UIImageView *star1;
+	UIImageView *star2;
+	UIImageView *star3;
+	UIImageView *star4;
+	UIImageView *star5;
+	UIActivityIndicatorView *activityIndicator;
+	
+	//MKMapView *mapView;
+	
+	Restaurant *thisRestaurant;
+	ASIFormDataRequest *imgRequest;
+	
+	double regionLatitude;
+	double regionLongitude;
+	UILabel *deScriptionLabel;
+	UIButton *Addbutton;
+
+	
+	
+	
+}
+
+@property(nonatomic,retain)IBOutlet UIButton *Addbutton;
+@property(nonatomic,retain)IBOutlet UILabel *deScriptionLabel;
+
+@property (nonatomic, retain)IBOutlet MKMapView *mapView;
+
+@property (nonatomic, retain) IBOutlet UIView *headerView;
+
+@property (nonatomic, retain) IBOutlet UIWebView *webView;
+
+@property (nonatomic, retain) IBOutlet UILabel *placeTitle;
+@property (nonatomic, retain) IBOutlet UILabel *placeName;
+@property (nonatomic, retain) IBOutlet UILabel *placeAddress;
+@property (nonatomic, retain) IBOutlet UILabel *placePhoneno;
+@property (nonatomic, retain) IBOutlet UILabel *placeDistance;
+@property (nonatomic, retain) IBOutlet UILabel *placeWebsite;
+@property (nonatomic, retain) IBOutlet UILabel *placeEmail;
+
+@property (nonatomic, retain) IBOutlet UIImageView *placeImage;
+
+
+@property (nonatomic, retain) IBOutlet UIImageView *otherImage1;
+@property (nonatomic, retain) IBOutlet UIImageView *otherImage2;
+@property (nonatomic, retain) IBOutlet UIImageView *otherImage3;
+
+@property (nonatomic, retain) IBOutlet UIImageView *star1;
+@property (nonatomic, retain) IBOutlet UIImageView *star2;
+@property (nonatomic, retain) IBOutlet UIImageView *star3;
+@property (nonatomic, retain) IBOutlet UIImageView *star4;
+@property (nonatomic, retain) IBOutlet UIImageView *star5;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator;
+
+@property (nonatomic, retain) Restaurant *thisRestaurant;
+@property(nonatomic,retain)IBOutlet UIImageView *AddImageView;
+@property(nonatomic,retain)NSTimer *addsTimer;
+@property(nonatomic,readwrite)int count;
+
+-(IBAction)backClicked:(id) sender;
+-(IBAction)HomeButtonPressed:(id)sender;
+-(IBAction)ADDPressed:(id)sender;
+
+@end

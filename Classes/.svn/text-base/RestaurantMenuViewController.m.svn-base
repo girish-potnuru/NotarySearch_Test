@@ -1,0 +1,312 @@
+//
+//  RestaruantMenuViewController.m
+//  ApunKaBazar
+//
+//  Created by APPLE on 6/29/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import "RestaurantMenuViewController.h"
+#import "JSON.h"
+#import "ASIFormDataRequest.h"
+#import "RestaurantMenu.h"
+#import "MenuItemsViewController.h"
+#import "ApunKaBazarAppDelegate.h"
+#import"AddsObject.h"
+@implementation RestaurantMenuViewController
+@synthesize rsid;
+@synthesize menuTable;
+@synthesize MenuArray;
+@synthesize MenuId;
+@synthesize Menuname;
+@synthesize titleline;
+@synthesize activityIndicator;
+@synthesize addsTimer;
+@synthesize count;
+@synthesize AddImageView;
+
+// The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
+/*
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization.
+    }
+    return self;
+}
+*/
+
+-(void)viewWillAppear:(BOOL)animated
+{
+	
+	NSLog(@"RestaurantMenuViewController");
+	self.addsTimer=[NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(addImagesMethod) userInfo:nil repeats:YES];
+}
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad 
+{
+	[super viewDidLoad];
+	
+	MenuArray=[[NSMutableArray alloc]init];
+	
+	appDelegate=(ApunKaBazarAppDelegate *)[[UIApplication sharedApplication] delegate];
+	self.menuTable.backgroundColor=[UIColor clearColor];
+	[self.menuTable setAllowsSelection:NO];
+	self.titleline.text=appDelegate.selectedCategory.specialitiesName;
+	self.titleline.textColor=[UIColor blueColor];
+	[self.titleline setFont:[UIFont boldSystemFontOfSize:17]];
+	self.titleline.textAlignment = UITextAlignmentCenter;
+	
+	self.activityIndicator.hidesWhenStopped = YES;
+	[self.activityIndicator startAnimating];
+	[self performSelector:@selector(getData) withObject:nil afterDelay:0.1];
+	[self addImagesMethod];
+}
+
+
+-(IBAction)back
+{
+	
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
+
+-(void) getData{
+	
+	//http:www.myappdemo.com/ApunKaBazaar/services/getresmenudetails.php?resid=2
+	NSString *urlString1=[NSString stringWithFormat:@"%@getresmenudetails.php",URLprefix];
+	NSLog(@"%@",urlString1);
+	NSURL *url1=[[NSURL alloc] initWithString:urlString1];
+	asiRequest = [ASIFormDataRequest requestWithURL:url1];
+	
+	[asiRequest setPostValue:self.rsid forKey:@"resid"];
+	[asiRequest setDelegate:self];
+	[asiRequest startAsynchronous];
+	
+	//[url1 release];
+		
+}
+
+- (void) requestFinished:(ASIHTTPRequest *)request
+{
+	asiRequest.delegate = nil;
+	asiRequest = nil;
+	
+	NSString *response = [request responseString];
+	NSLog(@"response:%@",response);
+	NSData *responseData=[request responseData];
+	NSString *responseString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+	
+	NSLog(@"responce string is %@",responseString);
+	
+	NSArray *results=[responseString JSONValue];
+	for(int i=0;i<[results count];i++)
+	{
+		NSDictionary *Dict=[results objectAtIndex:i];
+		RestaurantMenu *menu=[[RestaurantMenu alloc]init];
+		menu.menuid=[Dict objectForKey:@"ResMenuId"];
+		menu.menuname=[Dict objectForKey:@"ResMenuName"];
+		
+		[MenuArray addObject:menu];
+		[menu release];
+	}
+	
+	[self.menuTable reloadData];
+	[self.activityIndicator stopAnimating];
+}
+
+- (void) requestFailed:(ASIHTTPRequest *)request
+{
+	asiRequest.delegate = nil;
+	asiRequest = nil;
+	[self.activityIndicator stopAnimating];
+}
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [self.MenuArray count];
+	
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectionIndex {
+	
+	return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+	
+	return 60;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	static NSString *CellIdentifier = @"Cell";
+	
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	if (cell == nil)
+	{
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+									   reuseIdentifier:CellIdentifier] autorelease];
+		
+		
+		UIButton *btn=[[UIButton alloc] initWithFrame:CGRectMake(5, 5, 310, 50)];
+		//btn.tag=indexPath.section;
+		[btn setImage:[UIImage imageNamed:@"items-bg.png"] forState:UIControlStateNormal];
+		//[btn addTarget:self action:@selector(menuClicked:) forControlEvents:UIControlEventTouchUpInside];
+		[cell.contentView addSubview:btn];
+		[btn release];
+		
+		UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 17, 290, 21)];
+		//titleLabel.text = ((RestaurantMenu *)[self.MenuArray objectAtIndex:indexPath.section]).menuname;
+		titleLabel.textColor = [UIColor blueColor];
+		titleLabel.backgroundColor = [UIColor clearColor];
+		//titleLabel.textAlignment = UITextAlignmentCenter;
+		[cell.contentView addSubview:titleLabel];
+		[titleLabel release];
+		
+	}
+	
+	
+	NSArray *arr=cell.contentView.subviews;
+	for (UIView *subView in arr) {
+		if ([subView isKindOfClass:[UILabel class]]) {
+			UILabel *lbl=(UILabel *)subView;
+			lbl.text=((RestaurantMenu  *)[self.MenuArray objectAtIndex:indexPath.section]).menuname;
+		}
+		if ([subView isKindOfClass:[UIButton class]]) {
+			UIButton *btn=(UIButton *)subView;
+			btn.tag=indexPath.section;
+			[btn addTarget:self action:@selector(menuClicked:) forControlEvents:UIControlEventTouchUpInside];
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//RestaurantMenu *menu=[self.MenuArray objectAtIndex:indexPath.section];
+//	
+//	//self.MenuId=menu.menuid;
+//	//self.Menuname=menu.menuname;
+//	
+//	cell.textLabel.text=menu.menuname;
+//	cell.textLabel.textColor=[UIColor blueColor];
+//	cell.textLabel.textAlignment=UITextAlignmentCenter;
+//	NSLog(@"menuname is %@",menu.menuname);
+		
+	return cell;
+	
+}
+
+-(void)menuClicked:(id)sender
+{
+	MenuItemsViewController	 *itemview=[[MenuItemsViewController alloc]initWithNibName:@"MenuItemsViewController" bundle:nil];
+	RestaurantMenu *menu=[self.MenuArray objectAtIndex:[sender tag]];
+	itemview.ItemId=menu.menuid;
+	itemview.ItemName=menu.menuname;
+	[self.navigationController pushViewController:itemview animated:YES];
+	//[itemview release];	
+
+}
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
+/*
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations.
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+*/
+
+- (void)didReceiveMemoryWarning {
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc. that aren't in use.
+}
+
+- (void)viewDidUnload {
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+
+-(IBAction)HomeButtonPressed:(id)sender
+{
+	[self.navigationController popToRootViewControllerAnimated:YES];
+	
+}
+-(void)addImagesMethod
+{
+	
+	if(count<[appDelegate.addImagesArray count])
+	{
+		
+		AddsObject *object=(AddsObject *)[appDelegate.addImagesArray objectAtIndex:count];		
+		self.AddImageView.image=object.addImage;
+		count++;
+		
+	}	
+    
+	else	
+	{
+		count=0;
+		
+	}
+	
+	NSLog(@"count is %d",count);
+	
+}
+-(void)viewDidDisappear:(BOOL)animated
+{
+	
+	[self.addsTimer invalidate];
+}
+
+
+
+- (void)dealloc 
+{
+	if (asiRequest)
+	{
+		asiRequest.delegate = nil;
+		[asiRequest cancel];
+		asiRequest = nil;
+	}
+	
+ [addsTimer release];
+ [count release];
+ [AddImageView release];
+	
+	
+	[rsid release];
+	[MenuArray release];
+	[menuTable release];
+	[Menuname release];
+	[MenuId release];
+	
+	[activityIndicator release];
+	activityIndicator = nil;
+	
+    [super dealloc];
+}
+
+
+@end
